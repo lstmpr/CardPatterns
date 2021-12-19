@@ -5,10 +5,6 @@ import com.github.javafaker.Faker;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
-/**
- * Утилитный класс - содержит приватный конструктор и статичные методы
- *  Используем для удобства, один метод генерирует 3 поля (имя, телефон, номер карты)
- */
 
 
 public class DataGenerator {
