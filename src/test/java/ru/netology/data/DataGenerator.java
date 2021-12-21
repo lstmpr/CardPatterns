@@ -23,13 +23,10 @@ public class DataGenerator {
 
     }
 
-    public static String dateMeeting() {
-        return LocalDate.now().plusDays(3).format(DateTimeFormatter.ofPattern("dd.MM.yyyy"));
+    public static String dateMeeting(int plusDay) {
+        return LocalDate.now().plusDays(plusDay).format(DateTimeFormatter.ofPattern("dd.MM.yyyy"));
     }
 
-    public static String dateMeeting2() {
-        return LocalDate.now().plusDays(6).format(DateTimeFormatter.ofPattern("dd.MM.yyyy"));
-    }
 
     public static String name() {
         return faker.name().fullName();
