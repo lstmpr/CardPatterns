@@ -24,9 +24,8 @@ public class CardDelivPattern {
     }
 
     @Test
-    public void shouldSendCorrectForm(){
+    public void shouldSendCorrectForm() {
         $(".input__control[type='text'][placeholder='Город']").setValue(DataGenerator.city());
-        //$("[data-test-id='date'] input").sendKeys(Keys.chord(Keys.COMMAND, "a", Keys.DELETE)); // предварительная чистка поля с датой по умолчанию
         $("[data-test-id='date'] input").doubleClick().sendKeys(Keys.BACK_SPACE); // предварительная чистка поля с датой по умолчанию
         $("[data-test-id='date'] input").setValue(DataGenerator.dateMeeting());
         $("[name='name']").setValue(DataGenerator.name());
